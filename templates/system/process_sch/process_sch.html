@@ -1,0 +1,296 @@
+<!doctype html>
+{% load static %}
+<html lang="en">
+  <head>
+  	<title>Aeroponics :: SystemCare Hub</title>
+     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700' rel='stylesheet' type='text/css'>
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	  <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.4/xlsx.full.min.js"></script>
+
+
+ <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="keywords" content="Organic Store Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template,
+         Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design"
+  />
+  <script>
+    addEventListener("load", function () {
+      setTimeout(hideURLbar, 0);
+    }, false);
+
+
+    function hideURLbar() {
+      window.scrollTo(0, 1);
+    }
+  </script>
+  <!--booststrap-->
+  <link href="{% static 'system/system_home/css/bootstrap.min.css' %}" rel="stylesheet" type="text/css" media="all">
+  <!--//booststrap end-->
+  <!-- font-awesome icons -->
+  <link href="{% static 'system/system_home/css/font-awesome.min.css' %}" rel="stylesheet">
+  <!-- //font-awesome icons -->
+  <!--stylesheets-->
+  <link href="{% static 'system/system_home/css/style.css' %}" rel='stylesheet' type='text/css' media="all">
+  <!--//stylesheets-->
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,500,600,700" rel="stylesheet">
+  <link href="//fonts.googleapis.com/css?family=Patrick+Hand" rel="stylesheet">
+  <link href="//fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+	</head>
+   <style>
+       .button-85 {
+  padding: 0.6em 2em;
+  border: none;
+  outline: none;
+  color: rgb(255, 255, 255);
+  background: #111;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-85:before {
+  content: "";
+  background: linear-gradient(
+    45deg,
+    #ff0000,
+    #ff7300,
+    #fffb00,
+    #48ff00,
+    #00ffd5,
+    #002bff,
+    #7a00ff,
+    #ff00c8,
+    #ff0000
+  );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing-button-85 20s linear infinite;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+@keyframes glowing-button-85 {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.button-85:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 90%;
+  background: #222;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+
+            .table-wrap-scroll {
+        max-height: 500px; /* Set the maximum height for the scroll */
+        overflow-y: auto; /* Add vertical scroll bar */
+        overflow-x: auto; /* Add horizontal scroll bar if needed */
+    }
+
+    .table {
+        width: 100%; /* Make sure the table takes 100% width */
+    }
+     .button-4 {
+  padding: 0.6em 1.2em;
+  border: none;
+  outline: none;
+  color: #000;
+  background: #fff;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-4:before {
+  content: "";
+  background: linear-gradient(
+    45deg,
+    #ff0000,
+    #ff7300,
+    #fffb00,
+    #48ff00,
+    #00ffd5,
+    #002bff,
+    #7a00ff,
+    #ff00c8,
+    #ff0000
+  );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing-button-85 20s linear infinite;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+@keyframes glowing-button-4 {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 100% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.button-4:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: white;
+  left: 0;
+  top: 0;
+  border-radius: 100px;
+}
+        </style>
+	<body>
+<script>
+{% for msg in messages %}
+	alert('{{ msg }}');
+{% endfor %}
+</script>
+<div class="banner-left-side" id="home">
+    <!-- header -->
+    <div class="headder-top">
+      <!-- nav -->
+      <nav>
+        <div id="logo">
+          <h1>
+            <a href="/system_home/">SH</a>
+          </h1>
+        </div>
+        <div class="sub-headder position-relative">
+          <h6>
+            <a href="/system_home/">SystemCare
+              <br>Hub</a>
+          </h6>
+        </div>
+        <label for="drop" class="toggle">Menu</label>
+        <input type="checkbox" id="drop">
+        <ul class="menu mt-2">
+          <li class="active">
+            <a href="/">Home</a>
+          </li>
+          <li>
+            <a href="/soil_report_data/">SoilProfiler Report</a>
+          </li>
+
+            <li>
+              <a href="/process_sch/" style="text-decoration: underline #ffc107;">Process SCH</a>
+            </li>
+            <li>
+              <a href="/sys_report/">View SH Report</a>
+            </li>
+            <li>
+              <a href="/system_logout/">Logout</a>
+            </li>
+        </ul>
+      </nav>
+      <!-- //nav -->
+    </div>
+
+<br><br><br><br><br><br>
+		<section class="ftco-section">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-md-6 text-center mb-0">
+
+					<br><br>
+					<a href="/process_sch_client/"><h2 class="heading-section" style="color:black;font-weight: 800;">SYSTEMCARE HUB PROGRESS</h2></a>
+				</div>
+			</div>
+			<br>
+			<div class="row">
+				<div class="col-md-12">
+					<div class="table-wrap-scroll">
+						<table class="table">
+
+						  <thead class="thead-dark">
+							<tr>
+						    <th style="background-color: #F75D59; font-size: 16px;"><center>Client Id</center></th>
+						    <th style="background-color: #F75D59; font-size: 16px;"><center>Plant Type</center></th>
+							<th style="background-color: #F75D59; font-size: 16px;"><center>Aero-phonic Nutrient Count</center></th>
+							<th style="background-color: #F75D59; font-size: 16px;"><center>Soil-based Nutrient Count</center></th>
+							<th style="background-color: #F75D59; font-size: 16px;"><center>Result</center></th>
+							<th style="background-color: #F75D59; font-size: 16px;"><center>Action</center></th>
+
+					      </tr>
+					    </thead>
+					    <tbody>
+						    <tr class="alert" role="alert">
+								{% for data in datas %}
+
+								<td style="text-align:center;background-color:white;">{{data.client_id}}</td>
+								<td style="text-align:center;background-color:white;">{{data.Plant_Type}}</td>
+								<td style="text-align:center;background-color:white;">{{data.a_Nutrition_Value}}</td>
+								<td style="text-align:center;background-color:white;">{{data.s_Nutrition_Value}}</td>
+								<td style="text-align:center;background-color:white;">{{data.result}}</td>
+								<td style="text-align:center;background-color:white;">
+                                    {% if data.sysdone3 is False %}
+                                    <a href="/syscare_result/{{data.client_id}}/"><button class="button-85">PROCESS</button></a>
+                                    {% else %}
+                                    <p style="color:black;"><strong>PROCESSED</strong></p>
+                                    {% endif %}
+                                </td>
+					      </tr>
+						{% endfor %}
+
+					    </tbody>
+						</table>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<script src="{% static 'manager/client_insight/js/jquery.min.js' %}"></script>
+  <script src="{% static 'manager/client_insight/js/popper.js' %}"></script>
+  <script src="{% static 'manager/client_insight/js/bootstrap.min.js' %}"></script>
+  <script src="{% static 'manager/client_insight/js/main.js' %}"></script>
+
+	</body>
+</html>
+

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+<title>Animated Login Form Flat Responsive Widget Template :: w3layouts</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Animated Login Form template Responsive, Login form web template,Flat Pricing tables,Flat Drop downs  Sign up Web Templates, Flat Web Templates, Login sign up Responsive web template, SmartPhone Compatible web template, free Web Designs for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- Custom Theme files -->
+<link href="{% static 'client/client_login/css/bootstrap.min.css' %}" media='all' rel='stylesheet'>
+<link href="{% static 'client/client_login/css/style.css' %}" rel="stylesheet" type="text/css" media="all" />
+<link rel="stylesheet" href="{% static 'client/client_login/css/animate.min.css' %}">
+<!-- //Custom Theme files -->
+<!-- web font -->
+<link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+<!-- //web font -->
+		<style>
+		.button-18 {
+  align-items: center;
+  background-color: #0A66C2;
+  border: 0;
+  border-radius: 100px;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: -apple-system, system-ui, system-ui, "Segoe UI", Roboto, "Helvetica Neue", "Fira Sans", Ubuntu, Oxygen, "Oxygen Sans", Cantarell, "Droid Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Lucida Grande", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  justify-content: center;
+  line-height: 20px;
+  max-width: 480px;
+  min-height: 40px;
+  min-width: 0px;
+  overflow: hidden;
+  padding: 0px;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+  touch-action: manipulation;
+  transition: background-color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, box-shadow 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
+}
+
+.button-18:hover,
+.button-18:focus {
+  background-color: #16437E;
+  color: #ffffff;
+}
+
+.button-18:active {
+  background: #09223b;
+  color: rgb(255, 255, 255, .7);
+}
+
+.button-18:disabled {
+  cursor: not-allowed;
+  background: rgba(0, 0, 0, .08);
+  color: rgba(0, 0, 0, .3);
+}
+
+body {
+            background-image: url("{%static 'icons/2.jpg' %}");
+            background-size: cover;
+            background-repeat: no-repeat;
+
+        }
+	</style>
+
+</head>
+<body>
+<script>
+{% for msg in messages %}
+	alert('{{ msg }}');
+{% endfor %}
+</script>
+	<!-- main-agileits -->
+	<div class="agileits">
+		<h1 style="margin-top:-10px">SystemCare Hub Registration Form</h1>
+		<div class="w3-agileits-info">
+			<form class='form animate-form' id='form1' action="/systemregister/" method="POST" style="margin-top:-40px">
+				{% csrf_token %}
+				<p class="w3agileits">SystemCare Hub Register Here</p>
+
+				<div class='form-group has-feedback wthree'>
+					<label class='control-label sr-only' >Name</label>
+					<input type='text' class='form-control' name='empname' placeholder='Name' autocomplete="off" required=""/><span class='glyphicon glyphicon-ok form-control-feedback'></span>
+				</div>
+				<div class='form-group has-feedback wthree'>
+					<label class='control-label sr-only' >Email</label>
+					<input class='form-control'  name='empemail' placeholder='Email' type='text' autocomplete="off" onblur="validateEmail(this)" required=""/><span class='glyphicon glyphicon-ok form-control-feedback'></span>
+				</div>
+				<div class='form-group has-feedback wthree'>
+					<label class='control-label sr-only' >Address</label>
+					<input class='form-control'  name='empaddress' placeholder='Address' autocomplete="off" type='text' required=""/><span class='glyphicon glyphicon-ok form-control-feedback'></span>
+				</div>
+				<div class='form-group has-feedback wthree'>
+    <label class='control-label sr-only'>Phone Number</label>
+    <input class='form-control' name='empphone' placeholder='Phone Number' type='tel' pattern="[6-9][0-9]{3}[0-9]{6}" maxlength="10" autocomplete="off" onblur="validatePhoneNumber(this)" oninput="validatePhoneNumber(this)" required/>
+    <span class='glyphicon glyphicon-ok form-control-feedback'></span>
+    <div class="feedback-message"></div>
+</div>
+<div class='form-group has-feedback wthree'>
+    <select class='form-control' name='empdepartment' style="height: 44px; padding: 12px 15px; background-color: white; font-weight: 500; border-color: #00bcd4;" required="">
+        <option value="SystemCare Hub">SystemCare Hub</option>
+    </select>
+    <span class='glyphicon glyphicon-ok form-control-feedback'></span>
+</div>
+
+				<div class='submit w3-agile'>
+					<input class='btn btn-lg' type='submit' value='SUBMIT'>
+				</div>
+			</form>
+<br>
+			<center><a href="/systemlogin/"><button class="button-18" style="background-color:#00bcd4;height:20px;width:300px;" role="button">Back</button></a></center>
+
+</div>	
+	</div>	
+	<!-- //agileits -->
+	<!-- copyright -->
+
+	<!-- //copyright -->  
+	<!-- js -->
+	<script>
+			    function validateEmail(input) {
+        var email = input.value;
+        var emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+
+        if (!emailPattern.test(email)) {
+            input.value = '';
+            input.focus();
+            return false;
+        }
+        return true;
+    }
+			</script>
+
+<script>
+function validatePhoneNumber(input) {
+    const phoneNumber = input.value;
+    const prohibitedStarts = /^(1|2|3|4|5|0)/;
+    const feedbackMessage = input.parentElement.querySelector('.feedback-message');
+
+    if (prohibitedStarts.test(phoneNumber)) {
+        input.setCustomValidity("Phone numbers starting with 1, 2, 3, 4, 5, or 0 are not allowed.");
+        feedbackMessage.innerText = "Phone numbers starting with 1, 2, 3, 4, 5, or 0 are not allowed.";
+    } else {
+        input.setCustomValidity("");
+        feedbackMessage.innerText = "";
+    }
+}
+</script>
+	<script src="{% static 'client/client_login/js/jquery-2.2.3.min.js' %}"></script>
+	<script src="{% static 'client/client_login/js/jquery.validate.min.js' %}"></script>
+	<script src="{% static 'client/client_login/js/formAnimation.js' %}"></script>
+	<script src="{% static 'client/client_login/js/shake.js' %}"></script>
+	<!-- //js -->
+</body>
+</html>

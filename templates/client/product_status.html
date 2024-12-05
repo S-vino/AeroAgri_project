@@ -1,0 +1,367 @@
+<!doctype html>
+{% load static %}
+<html lang="en">
+  <head>
+  	<title>PRODUCT STATUS</title>
+	  <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="keywords" content="Radiant Energy Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template,
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+	<script type="application/x-javascript">
+		addEventListener("load", function () {
+			setTimeout(hideURLbar, 0);
+		}, false);
+
+		function hideURLbar() {
+			window.scrollTo(0, 1);
+		}
+	</script>
+	  	<!--meta tags -->
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="keywords" content="Husbandry Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template,
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+	<script>
+		addEventListener("load", function () {
+			setTimeout(hideURLbar, 0);
+		}, false);
+
+		function hideURLbar() {
+			window.scrollTo(0, 1);
+		}
+	</script>
+	<!--//meta tags ends here-->
+
+	<!--booststrap-->
+
+	<link href="{% static 'client/client_home/css/bootstrap.css' %}" rel="stylesheet" type="text/css" media="all">
+	<!--//booststrap end-->
+
+	<!-- font-awesome icons -->
+	<link href="{% static 'client/client_home/css/font-awesome.css' %}" rel="stylesheet">
+	<!-- //font-awesome icons -->
+	<!--stylesheets-->
+	<link href="{% static 'client/client_home/css/style.css' %}" rel='stylesheet' type='text/css' media="all">
+	<!--//stylesheets-->
+	<link rel="stylesheet" href="{% static 'client/client_home/css/lightbox.css' %}">
+	<!--gallery-->
+
+	<link href="//fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
+
+
+ <style>
+    body {
+            background-image: url("{%static 'icons/file.jpg' %}");
+            background-size: cover;
+            background-repeat: no-repeat;
+
+        }
+
+        .bookmarkBtn {
+  width: 100px;
+  height: 40px;
+  border-radius: 40px;
+  border: 1px solid rgba(255, 255, 255, 0.349);
+  background-color: rgb(12, 12, 12);
+  display: flex;
+  align-items: center;
+  margin-right:-40px;
+  justify-content: center;
+  cursor: pointer;
+  transition-duration: 0.3s;
+  overflow: hidden;
+}
+
+.IconContainer {
+  width: 30px;
+  height: 30px;
+  background: linear-gradient(to bottom, rgb(255, 136, 255), rgb(172, 70, 255));
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  z-index: 2;
+  transition-duration: 0.3s;
+}
+
+.icon {
+  border-radius: 1px;
+}
+
+.text {
+  height: 100%;
+  width: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  z-index: 1;
+  transition-duration: 0.3s;
+  font-size: 1.04em;
+}
+
+.bookmarkBtn:hover .IconContainer {
+  width: 90px;
+  transition-duration: 0.3s;
+}
+
+.bookmarkBtn:hover .text {
+  transform: translate(10px);
+  width: 0;
+  font-size: 0;
+  transition-duration: 0.3s;
+}
+
+.bookmarkBtn:active {
+  transform: scale(0.95);
+  transition-duration: 0.3s;
+}
+
+.cta {
+  position: relative;
+  margin: auto;
+  padding: 8px 2px;
+  transition: all 0.2s ease;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.cta:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  border-radius: 50px;
+  background: #ce8651;
+  width: 45px;
+  height: 35px;
+  transition: all 0.3s ease;
+}
+
+.cta span {
+  position: relative;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: black;
+}
+
+.cta svg {
+  position: relative;
+  top: 0;
+  margin-left: 10px;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke: black;
+  stroke-width: 2;
+  transform: translateX(-5px);
+  transition: all 0.3s ease;
+}
+
+.cta:hover:before {
+  width: 100%;
+  background: #ce8651;
+}
+
+.cta:hover svg {
+  transform: translateX(0);
+}
+
+.cta:active {
+  transform: scale(0.95);
+}
+
+
+     .Btn {
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 45px;
+  height: 45px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  position: relative;
+
+  overflow: hidden;
+  transition-duration: .3s;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.199);
+  background-color: var(--af-white);
+}
+
+/* plus sign */
+.sign {
+  width: 100%;
+  transition-duration: .3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sign svg {
+  width: 50px;
+}
+</style>
+	</head>
+	<body>
+
+<script>
+{% for msg in messages %}
+	alert('{{ msg }}');
+{% endfor %}
+</script>
+
+<div class="header-outs">
+		<div class="w3-agile-logo">
+			<div class=" head-wl">
+				<div class="headder-w3" >
+					<h1 style="margin-left:600px;"><a href="/client_home/"><center>Client Portal</center></a></h1>
+				</div>
+
+
+
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+		<div class="top-nav">
+			<nav class="navbar navbar-default navbar-fixed-top">
+				<div class="container">
+
+					<!-- //header -->
+
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false"
+						 aria-controls="navbar">
+	                <span class="sr-only">Toggle navigation</span>
+	                <span class="icon-bar"></span>
+	                <span class="icon-bar"></span>
+	                <span class="icon-bar"></span>
+                </button>
+					</div>
+
+					<div id="navbar" class="navbar-collapse collapse">
+						<ul class="nav navbar-nav ">
+						<li><a href="/"><strong>Home</strong></a></li>
+							<li><a href="/client_upload/"><strong>Prerequisite Upload</strong></a></li>
+							<li style="background-color:#ce8651;"><a href="/product_status/"><strong style="color:white;">Product Status</strong></a></li>
+							<li><a href="/id/"><strong>Payment</strong></a></li>
+							<li><a href="/client_logout/"><strong>Logout</strong></a></li>
+						</ul>
+					</div>
+
+				</div>
+			</nav>
+		</div>
+
+	<section class="ftco-section">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-md-13 text-center mb-5">
+					<br><br><br><br><br><br><br><br><br><br>
+<h2 style="color: white;">PRODUCT STATUS</h2>
+				</div>
+
+			</div>
+<br><br>
+			<div class="row">
+				<div class="col-md-12">
+					<div class="table-wrap">
+						<table class="table">
+
+						  <thead class="thead-dark">
+						  <tr>
+						  <th style="background-color: orange; font-size: 16px;"><center>Client Id</center></th>
+						  <th style="background-color: orange; font-size: 16px;"><center>Order Id</center></th>
+						  <th style="background-color: orange; font-size: 16px;"><center>Name</center></th>
+						  <th  style="background-color: orange; font-size: 16px;"><center>Address</center></th>
+						  <th style="background-color: orange; font-size: 16px;"><center>Email</center></th>
+						  <th style="background-color: orange; font-size: 16px;"><center>Phone</center></th>
+						  <th  style="background-color: orange; font-size: 16px;"><center>Status</center></th>
+					      </tr>
+					    </thead>
+
+					    <tbody>
+						    <tr class="alert" role="alert">
+
+    <tr>
+        <td style="text-align:center;color:black;background-color:white;">{{ datas.client_id }}</td>
+        <td style="text-align:center;color:black;background-color:white;">{{ datas.order_id }}</td>
+        <td style="text-align:center;color:black;background-color:white;">{{ datas.fullname }}</td>
+        <td style="text-align:center;color:black;background-color:white;">{{ datas.address }}</td>
+        <td style="text-align:center;color:black;background-color:white;">{{ datas.email }}</td>
+        <td style="text-align:center;color:black;background-color:white;">{{ datas.phone }}</td>
+		{% if datas.end is True %}
+		<td style="text-align:center;color:black;background-color:white;">{{ datas.status }}</td>
+		{% endif %}
+		{% if  datas.final is True %}
+        <td style="text-align:center;color:black;background-color:white;"><b>Payment Pending</b></td>
+		{% endif %}
+		{% if  datas.p is True %}
+		<td style="text-align:center;color:black;background-color:white;">
+			<form action="/final_report/{{datas.client_id}}/">
+				<button class="cta" type="submit">
+  <span>Generate Report</span>
+  <svg width="15px" height="10px" viewBox="0 0 13 10">
+    <path d="M1,5 L11,5"></path>
+    <polyline points="8 1 12 5 8 9"></polyline>
+  </svg>
+</button>
+
+
+			</form>
+		</td>
+        {% endif %}
+		{% if datas.report is True %}
+			<td style="color:black;background-color:white;">
+				{% if datas.final_report %}
+			<a href="{{datas.final_report.url}}"  target="_blank" download>
+				<button class="bookmarkBtn">
+  <span class="IconContainer">
+    <svg viewBox="0 0 384 512" height="0.9em" class="icon">
+      <path
+        d="M0 48V487.7C0 501.1 10.9 512 24.3 512c5 0 9.9-1.5 14-4.4L192 400 345.7 507.6c4.1 2.9 9 4.4 14 4.4c13.4 0 24.3-10.9 24.3-24.3V48c0-26.5-21.5-48-48-48H48C21.5 0 0 21.5 0 48z"
+      ></path>
+    </svg>
+  </span>
+  <p class="text">Save</p>
+</button>
+
+			<a href="/read/{{datas.client_id}}/"><button class="Btn" type="submit" style="margin-left:120px;margin-top:-42px;">
+    <div class="sign">
+        <span style="font-size: 24px; ">🔊</span>
+    </div>
+</button></a>
+			</a>
+				{% else %}
+				No File Available
+				{% endif %}
+		</td>
+		{% endif %}
+
+    </tr>
+
+
+					    </tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+		<br><br>
+	</section>
+<br><br>
+	<br>
+	<script src="{% static 'manager/client_insight/js/jquery.min.js' %}"></script>
+  <script src="{% static 'manager/client_insight/js/popper.js' %}"></script>
+  <script src="{% static 'manager/client_insight/js/bootstrap.min.js' %}"></script>
+  <script src="{% static 'manager/client_insight/js/main.js' %}"></script>
+
+	</body>
+</html>
+

@@ -1,0 +1,222 @@
+
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+<title>REQUIREMENT</title>
+	<!--meta tags -->
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="keywords" content="Husbandry Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template,
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+	<script>
+		addEventListener("load", function () {
+			setTimeout(hideURLbar, 0);
+		}, false);
+
+		function hideURLbar() {
+			window.scrollTo(0, 1);
+		}
+	</script>
+	<!--//meta tags ends here-->
+
+	<!--booststrap-->
+
+	<link href="{% static 'client/client_home/css/bootstrap.css' %}" rel="stylesheet" type="text/css" media="all">
+	<!--//booststrap end-->
+
+	<!-- font-awesome icons -->
+	<link href="{% static 'client/client_home/css/font-awesome.css' %}" rel="stylesheet">
+	<!-- //font-awesome icons -->
+	<!--stylesheets-->
+	<link href="{% static 'client/client_home/css/style.css' %}" rel='stylesheet' type='text/css' media="all">
+	<!--//stylesheets-->
+	<link rel="stylesheet" href="{% static 'client/client_home/css/lightbox.css' %}">
+	<!--gallery-->
+
+	<link href="//fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
+
+<!-- for-mobile-apps -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Dazzling Multi Forms Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+		function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- //for-mobile-apps -->
+<link href="{% static 'client/client_upload_datasource/css/style.css' %}" rel="stylesheet" type="text/css" media="all" />
+<link rel="stylesheet" href="{% static 'client/client_upload_datasource/css/flexslider.css' %}" type="text/css" media="screen" property="" />
+<!-- js -->
+<script src="{% static 'client/client_upload_datasource/js/jquery-2.2.3.min.js' %}"></script>
+<!-- //js -->
+<link href="//fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+</head>
+<body style="background-image: url({% static 'icons/upload.jpg' %}); background-size:cover; background-repeat:no-repeat;">
+<script>
+{% for msg in messages %}
+	alert('{{ msg }}');
+{% endfor %}
+</script>
+<div class="header-outs">
+		<div class="w3-agile-logo">
+			<div class=" head-wl">
+				<div class="headder-w3" >
+					<h1 style="margin-left:600px;"><a href="/client_home/"><center>Client Portal</center></a></h1>
+				</div>
+
+
+
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+		<div class="top-nav">
+			<nav class="navbar navbar-default navbar-fixed-top">
+				<div class="container">
+
+					<!-- //header -->
+
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false"
+						 aria-controls="navbar">
+	                <span class="sr-only">Toggle navigation</span>
+	                <span class="icon-bar"></span>
+	                <span class="icon-bar"></span>
+	                <span class="icon-bar"></span>
+                </button>
+					</div>
+
+					<div id="navbar" class="navbar-collapse collapse">
+						<ul class="nav navbar-nav ">
+						<li><a href="/"><strong>Home</strong></a></li>
+							<li style="background-color:#ce8651;"><a href="/client_upload/"><strong style="color:white;">Prerequisite Upload</strong></a></li>
+							<li><a href="/product_status/"><strong>Product Status</strong></a></li>
+							<li><a href="/id/"><strong>Payment</strong></a></li>
+							<li><a href="/client_logout/"><strong>Logout</strong></a></li>
+						</ul>
+					</div>
+
+				</div>
+			</nav>
+		</div>
+	<div class="main">
+
+		<br><br><br><br><br><br>
+		<a href="/client_home/"><h1 style="color:white;">Prerequisite Source</h1></a>
+<br>
+<br>		<div class="w3_agile_main_grids">
+			<section class="slider">
+				<div class="flexslider">
+					<ul class="slides">
+						<li>
+							<div class="agileits_w3layouts_main_grid">
+								<h1 style="color: white; font-size: 28px;"><b>Datasource Upload</b></h1>
+
+								<br>
+								<form action="/client_upload/" method="post" enctype="multipart/form-data">
+									{% csrf_token %}
+									<span>
+										<label>Client Id </label>
+										<input type="text"  value="{{ client_id }}" name="client_id" style="padding: 11.5px; width: 350px; color: white;" autocomplete="off" required disabled>
+									  </span>
+
+									<span>
+										<label for="Plant_Type">PlantType</label>
+										<select name="Plant_Type" id="Plant_Type" style="color:white;" required>
+											<option value="" style="background-color:#f1730f;" disabled selected>Select Plant Type</option>
+											<option value="Arugula" style="background-color:transparent;color:black;">Arugula</option>
+											<option value="Basil" style="background-color:transparent;color:black;">Basil</option>
+											<option value="Beans" style="background-color:transparent;color:black;">Beans</option>
+											<option value="Beets" style="background-color:transparent;color:black;">Beets</option>
+											<option value="Bell pepper" style="background-color:transparent;color:black;">Bell pepper</option>
+											<option value="Bok choy" style="background-color:transparent;color:black;">Bok choy</option>
+											<option value="Brinjal" style="background-color:transparent;color:black;">Brinjal</option>
+											<option value="Broccoli" style="background-color:transparent;color:black;">Broccoli</option>
+											<option value="Brussels sprouts" style="background-color:transparent;color:black;">Brussels sprouts</option>
+											<option value="Cabbage" style="background-color:transparent;color:black;">Cabbage</option>
+											<option value="Carrot" style="background-color:transparent;color:black;">Carrot</option>
+											<option value="Cauliflower" style="background-color:transparent;color:black;">Cauliflower</option>
+											<option value="Celery" style="background-color:transparent;color:black;">Celery</option>
+											<option value="Chilli" style="background-color:transparent;color:black;">Chilli</option>
+											<option value="Chives" style="background-color:transparent;color:black;">Chives</option>
+											<option value="Cilantro" style="background-color:transparent;color:black;">Cilantro</option>
+											<option value="Cilantro (Coriander)" style="background-color:transparent;color:black;">Cilantro (Coriander)</option>
+											<option value="Cucumber" style="background-color:transparent;color:black;">Cucumber</option>
+											<option value="Dill" style="background-color:transparent;color:black;">Dill</option>
+											<option value="Eggplant" style="background-color:transparent;color:black;">Eggplant</option>
+											<option value="Endive" style="background-color:transparent;color:black;">Endive</option>
+											<option value="Kale" style="background-color:transparent;color:black;">Kale</option>
+											<option value="Lavender" style="background-color:transparent;color:black;">Lavender</option>
+											<option value="Lettuce" style="background-color:transparent;color:black;">Lettuce</option>
+											<option value="Mint" style="background-color:transparent;color:black;">Mint</option>
+											<option value="Oregano" style="background-color:transparent;color:black;">Oregano</option>
+											<option value="Parsley" style="background-color:transparent;color:black;">Parsley</option>
+											<option value="Pepper" style="background-color:transparent;color:black;">Pepper</option>
+											<option value="Radicchio" style="background-color:transparent;color:black;">Radicchio</option>
+											<option value="Radish" style="background-color:transparent;color:black;">Radish</option>
+											<option value="Rosemary" style="background-color:transparent;color:black;">Rosemary</option>
+											<option value="Spinach" style="background-color:transparent;color:black;">Spinach</option>
+											<option value="Squash" style="background-color:transparent;color:black;">Squash</option>
+											<option value="Strawberry" style="background-color:transparent;color:black;">Strawberry</option>
+											<option value="Swiss chard" style="background-color:transparent;color:black;">Swiss chard</option>
+											<option value="Thyme" style="background-color:transparent;color:black;">Thyme</option>
+											<option value="Tomato" style="background-color:transparent;color:black;">Tomato</option>
+											<option value="Zucchini" style="background-color:transparent;color:black;">Zucchini</option>
+										</select>
+									</span>
+
+<br><br>
+									<div class="w3_agileits_submit">
+
+										<input type="submit" value="upload" style="margin-right: 10px;">
+										<input type="reset" value="reset" style="margin-right: 10px;">
+										<a href="/client_home/" class="btn btn-primary" style="padding: 13px 50px;
+    text-transform: uppercase;
+    outline: none;
+    border: none;
+    font-size: 1em;
+    letter-spacing: 1px;
+    color: #fff;
+    cursor: pointer;
+    width: 30%;background: #f1730f; margin-right: 10px;">Back</a>
+									</div>
+								</form>
+							</div>
+						</li></ul>
+</div>
+<!--		<div class="agileits_copyright">-->
+<!--			<p>© 2017 Dazzling Multi Forms. All rights reserved | Design by <a href="//w3layouts.com/">W3layouts</a></p>-->
+<!--		</div>-->
+				</section>
+<!-- password -->
+	<script type="text/javascript">
+		window.onload = function () {
+			document.getElementById("password1").onchange = validatePassword;
+			document.getElementById("password2").onchange = validatePassword;
+		}
+		function validatePassword(){
+			var pass2=document.getElementById("password2").value;
+			var pass1=document.getElementById("password1").value;
+			if(pass1!=pass2)
+				document.getElementById("password2").setCustomValidity("Passwords Don't Match");
+			else
+				document.getElementById("password2").setCustomValidity('');	 
+				//empty string means no validation error
+		}
+	</script>
+<!-- password -->
+<!-- flexSlider -->
+	<script defer src="{% static 'client/client_upload_datasource/js/jquery.flexslider.js' %}"></script>
+	<script type="text/javascript">
+		$(window).load(function(){
+		  $('.flexslider').flexslider({
+			animation: "slide",
+			start: function(slider){
+			  $('body').removeClass('loading');
+			}
+		  });
+		});
+	</script>
+
+<!-- //flexSlider -->
+</body>
+</html>

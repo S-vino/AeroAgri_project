@@ -1,0 +1,39 @@
+Plant_Type,Nutrient_Solution_Temperature,Nutrient_Solution_pH,Nutrient_Solution_Electrical_Conductivity,Dissolved_Oxygen,Air_Temperature,Air_Humidity,Light_Intensity,CO2_Concentration,Plant_Height,Plant_Weight,Cultivation_Time_Days,Distance_between_plants_cm,Distance_between_rows_cm,Number_of_plants_per_m2,Nutrient_Solution_FlowRate,Nutrient_Solution_Reservoir_Volume,Nutrient_Solution_Replacement_Frequency_Days,Mist_Material_Type
+Arugula,18,6,1.8,5.8,19,60,450,350,10,110,30-45,15,15,222,10,100,7,Fog
+Basil,24,6,1.8,5.5,25,70,500,420,10,110,30-45,20,20,250,30,300,12,Ultrafine Mist
+Beans,22,6,1.8,5.5,23,65,550,450,12,120,45-60,20,20,250,30,300,12,Ultrafine Mist
+Beets,20,6.5,2,6,12,60,500,400,18,180,60-90,15,15,222,10,100,7,Ultrafine Mist
+Bell pepper,25,6.5,2.3,6.3,26,60,600,500,13,130,60-90,15,15,222,10,100,7,Aerosol
+Bok choy,20,6.5,2,6,12,60,500,400,18,180,45-60,15,15,222,10,100,7,Ultrafine Mist
+Brinjal,27,6.5,2.5,6.5,28,65,650,550,50,300,60-90,20,20,250,30,300,12,Ultrafine Mist
+Broccoli,20,6.5,2,6,12,60,500,400,18,180,60-90,15,15,222,10,100,7,Ultrafine Mist
+Brussels sprouts,20,6.5,2,6,12,60,500,400,18,180,60-90,15,15,222,10,100,7,Aerosol
+Cabbage,20,6.5,2,6,12,60,500,400,18,180,60-90,12,12,694,15,150,10,Ultrafine Mist
+Carrot,20,6.5,2,6,23,65,550,450,35,200,60-90,15,20,250,10,100,12,Ultrafine Mist
+Cauliflower,20,6.5,2,6,12,60,500,400,18,180,60-90,11,15,222,10,100,7,Ultrafine Mist
+Celery,22,6,2,6,23,65,550,450,15,150,60-90,12,15,222,30,100,7,Aerosol
+Chilli,27,6.5,2.5,6.5,28,65,650,550,50,300,60-90,10,12,222,10,300,10,Ultrafine Mist
+Chives,23,6,1.8,5.5,24,65,550,450,12,120,30-45,15,12,250,10,100,10,coarse mist
+Cilantro,23,6,1.8,5.5,24,65,550,450,12,120,30-45,15,10,222,15,300,12,Ultrafine Mist
+Cilantro (Coriander),23,6,1.8,5.5,24,65,550,450,12,120,30-45,15,15,222,10,100,7,Fog
+Cucumber,27,6.5,2.5,6.5,28,60,580,480,14,140,45-60,20,15,694,30,100,7,coarse mist
+Dill,20,6.5,2,6,12,60,500,350,10,110,30-45,20,15,222,10,100,10,Ultrafine Mist
+Eggplant,26,6.2,2.1,6.1,27,65,650,400,18,180,30-45,15,20,250,10,300,7,coarse mist
+Endive,22,6,1.8,5.5,23,65,550,550,12,120,60-90,15,15,250,15,300,12,coarse mist
+Kale,20,6.5,2,6,12,60,500,450,12,120,30-45,20,20,222,30,300,7,Fog
+Lavender,20,6.5,2,6,12,60,500,400,18,180,45-60,15,20,222,10,100,7,Ultrafine Mist
+Lettuce,23,6,1.8,5.5,24,65,550,400,18,180,60-90,15,15,222,30,300,10,Ultrafine Mist
+Mint,23,6,1.8,5.5,24,70,500,450,12,120,45-50,12,15,222,30,300,7,Aerosol
+Oregano,22,6,1.8,5.5,23,65,550,420,10,110,30-45,10,15,694,10,100,7,Ultrafine Mist
+Parsley,22,6,1.8,5.5,23,70,500,450,12,120,60-90,15,20,250,10,100,12,Fog
+Pepper,18,6,1.8,5.8,19,60,450,450,12,120,60-90,15,15,222,10,100,7,coarse mist
+Radicchio,20,6.5,2,6,12,60,500,420,10,110,30-45,20,15,222,10,100,7,Ultrafine Mist
+Radish,20,6.5,2,6,23,65,550,400,18,180,60-90,20,15,222,30,300,10,Aerosol
+Rosemary,22,6,1.8,5.5,23,65,550,450,30,180,30-40,15,12,220,10,100,12,Ultrafine Mist
+Spinach,18,6,1.8,5.8,19,60,450,450,12,120,60-90,15,15,222,10,100,7,Fog
+Squash,20,6.5,2,6,12,60,500,400,18,180,45-60,15,15,222,30,300,7,coarse mist
+Strawberry,22,5.8,1.9,5.8,23,68,500,350,10,110,30-45,15,20,222,15,150,12,Ultrafine Mist
+Swiss chard,20,6.5,2,6,12,60,500,420,10,110,60-90,20,20,250,10,100,7,Aerosol
+Thyme,20,6.5,2,6,12,60,500,400,18,180,45-60,15,15,222,30,300,7,Fog
+Tomato,25,6.2,2.2,6.2,26,62,600,400,18,180,60-90,15,15,222,30,300,10,coarse mist
+Zucchini,27,6.5,2.5,6.5,28,60,580,500,15,150,60-90,12,15,220,10,150,12,coarse mist

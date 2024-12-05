@@ -1,0 +1,245 @@
+<!doctype html>
+{% load static %}
+<html lang="en">
+  <head>
+<title>Aeroponics Crop Growth :: Admin</title>
+     <style>
+
+
+        h1 {
+            font-family: "proxima-nova",sans-serif;
+            letter-spacing: -0.01em;
+            font-weight: 700;
+            font-style: normal;
+            font-size: 60px;
+            margin-left: -3px;
+            line-height: 1em;
+            color: #fff;
+            text-align: center;
+            margin-bottom: 8px;
+            text-rendering: optimizeLegibility;
+        }
+
+        table {
+            width: 80%;
+            margin: auto;
+        }
+
+        table, th, td {
+            border: 1px solid #fff;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 15px;
+        }
+
+
+        /* latin-ext */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 300;
+  src: url(https://fonts.gstatic.com/s/lato/v24/S6u9w4BMUTPHh7USSwaPGR_p.woff2) format('woff2');
+  unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 300;
+  src: url(https://fonts.gstatic.com/s/lato/v24/S6u9w4BMUTPHh7USSwiPGQ.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/lato/v24/S6uyw4BMUTPHjxAwXjeu.woff2) format('woff2');
+  unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/lato/v24/S6uyw4BMUTPHjx4wXg.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://fonts.gstatic.com/s/lato/v24/S6u9w4BMUTPHh6UVSwaPGR_p.woff2) format('woff2');
+  unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://fonts.gstatic.com/s/lato/v24/S6u9w4BMUTPHh6UVSwiPGQ.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+</style>
+
+
+	   <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8" />
+    <meta name="keywords" content="Organization Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+    <script>
+        addEventListener("load", function() {
+            setTimeout(hideURLbar, 0);
+        }, false);
+
+        function hideURLbar() {
+            window.scrollTo(0, 1);
+        }
+
+    </script>
+    <!-- //Meta tag Keywords -->
+    <!-- Custom-Files -->
+    <link rel="stylesheet" href="{% static 'admins/admins_home/css/bootstrap.css' %}">
+    <!-- Bootstrap-Core-CSS -->
+    <link rel="stylesheet" href="{% static 'admins/admins_home/css/style.css' %}" type="text/css" media="all" />
+    <!-- Style-CSS -->
+    <!-- font-awesome-icons -->
+    <link href="{% static 'admins/admins_home/css/font-awesome.css' %}" rel="stylesheet">
+    <!-- //font-awesome-icons -->
+      <!-- /Fonts -->
+    <link href="//fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900" rel="stylesheet">
+    <!-- //Fonts -->
+
+
+
+	</head>
+
+	<body>
+<script>
+{% for msg in messages %}
+	alert('{{ msg }}');
+{% endfor %}
+</script>
+
+
+ <div class="main-content" id="home">
+        <div class="layer">
+            <!-- header -->
+            <header>
+                <div class="container-fluid px-lg-5">
+
+                    <!-- nav -->
+                    <nav class="pt-4 d-lg-flex">
+                        <div id="logo">
+                            <h1> <a href="/admins_home/">ADMIN</a></h1>
+                        </div>
+                        <label for="drop" class="toggle">Menu</label>
+                        <input type="checkbox" id="drop" />
+                        <ul class="menu mt-2 ml-auto">
+                            <li ><a href="/">Home</a></li>
+
+                            <li>
+                                <!-- First Tier Drop Down -->
+                                <label for="drop-2" class="toggle">Dropdown <span class="fa fa-angle-down" aria-hidden="true"></span> </label>
+                                <a href="#">Logstatus <span class="fa fa-angle-down" aria-hidden="true"></span></a>
+                                <input type="checkbox" id="drop-2" />
+                                <ul class="inner-ul">
+
+                                    <li><a href="/client_details/" class="scroll">Client</a></li>
+									<li><a href="/am_details/" class="scroll">AeroMistifier</a></li>
+                                    <li><a href="/soil_details/" class="scroll">SoilProfiler</a></li>
+									<li><a href="/system_details/" class="scroll">SystemCare Hub</a></li>
+
+                                </ul>
+                            </li>
+							   <li>
+                                <!-- First Tier Drop Down -->
+                                <label for="drop-2" class="toggle">Dropdown <span class="fa fa-angle-down" aria-hidden="true"></span> </label>
+                                <a href="#" style="color:#db1478;">Reports <span class="fa fa-angle-down" aria-hidden="true"></span></a>
+                                <input type="checkbox" id="drop-2" />
+                                <ul class="inner-ul">
+
+                                    <li><a href="/aero_report/" class="scroll">AeroMistifier</a></li>
+									<li  class="active"><a href="/soil_report/" class="scroll">SoilProfiler</a></li>
+                                    <li><a href="/system_report/" class="scroll">SystemCare Hub</a></li>
+
+                                </ul>
+                            </li>
+                            <li><a href="/invoicehome/" class="scroll">Generate Bill</a></li>
+                            <li><a href="/payslip/" class="scroll">Payslip Status</a></li>
+							 <li><a href="/admins_logout/" class="scroll">Logout</a></li>
+
+                        </ul>
+                    </nav>
+                    <!-- //nav -->
+                </div>
+            </header>
+
+<br><br><br><br><br><br><br>
+			<center><a href="/soilreportpage/"><h2 class="heading-section" style="color: white;
+    font-weight: 800;">SoilProfiler Report</h2></a></center>
+<div style="overflow: auto; margin-left:20px; margin-right:20px;">
+    <table>
+    <br><br>
+    <thead>
+        <tr style="color: black;">
+            <th style="background-color: #F85A40; font-size: 16px; text-align:center;" rowspan="2">Plant Type</th>
+            <th style="background-color: #F85A40; font-size: 16px; text-align:center;" rowspan="1" colspan="7">Aeroponic Veg Nutrients</th>
+            <th style="background-color: #F85A40; font-size: 16px; text-align:center;" rowspan="1" colspan="7">Soil-based Veg Nutrients</th>
+            <th style="background-color: #F85A40; font-size: 16px; text-align:center;" rowspan="2">Result</th>
+        </tr>
+        <tr style="color: black;">
+            <th style="background-color: #F85A40; font-size: 16px;" rowspan="1" colspan="1">Nitrogen</th>
+            <th style="background-color: #F85A40; font-size: 16px;" rowspan="1" colspan="1">Phosphorus</th>
+            <th style="background-color: #F85A40; font-size: 16px;" rowspan="1" colspan="1">Potassium</th>
+            <th style="background-color: #F85A40; font-size: 16px;" rowspan="1" colspan="1">Calcium</th>
+            <th style="background-color: #F85A40; font-size: 16px;" rowspan="1" colspan="1">Magnesium</th>
+            <th style="background-color: #F85A40; font-size: 16px;" rowspan="1" colspan="1">Sulfur</th>
+            <th style="background-color: #F85A40; font-size: 16px;" rowspan="1" colspan="1">Nutrition_Value</th>
+            <th style="background-color: #F85A40; font-size: 16px;" rowspan="1" colspan="1">Nitrogen</th>
+            <th style="background-color: #F85A40; font-size: 16px;" rowspan="1" colspan="1">Phosphorus</th>
+            <th style="background-color: #F85A40; font-size: 16px;" rowspan="1" colspan="1">Potassium</th>
+            <th style="background-color: #F85A40; font-size: 16px;" rowspan="1" colspan="1">Calcium</th>
+            <th style="background-color: #F85A40; font-size: 16px;" rowspan="1" colspan="1">Magnesium</th>
+            <th style="background-color: #F85A40; font-size: 16px;" rowspan="1" colspan="1">Sulfur</th>
+            <th style="background-color: #F85A40; font-size: 16px;" rowspan="1" colspan="1">Nutrition_Value</th>
+        </tr>
+    </thead>
+    <tbody style="color: white;">
+        {% for data in datas %}
+        <tr>
+            <td style="background-color: white; color:black; font-size: 16px;">{{ data.Plant_Type }}</td>
+            <td style="background-color: white; color:black; font-size: 16px;">{{ data.a_Nitrogen }}</td>
+            <td style="background-color: white; color:black; font-size: 16px;">{{ data.a_Phosphorus }}</td>
+            <td style="background-color: white; color:black; font-size: 16px;">{{ data.a_Potassium }}</td>
+            <td style="background-color: white; color:black; font-size: 16px;">{{ data.a_Calcium }}</td>
+            <td style="background-color: white; color:black; font-size: 16px;">{{ data.a_Magnesium }}</td>
+            <td style="background-color: white; color:black; font-size: 16px;">{{ data.a_Sulfur }}</td>
+            <td style="background-color: white; color:black; font-size: 16px;">{{ data.a_Nutrition_Value }}</td>
+            <td style="background-color: white; color:black; font-size: 16px;">{{ data.s_Nitrogen }}</td>
+            <td style="background-color: white; color:black; font-size: 16px;">{{ data.s_Phosphorus }}</td>
+            <td style="background-color: white; color:black; font-size: 16px;">{{ data.s_Potassium }}</td>
+            <td style="background-color: white; color:black; font-size: 16px;">{{ data.s_Calcium }}</td>
+            <td style="background-color: white; color:black; font-size: 16px;">{{ data.s_Magnesium }}</td>
+            <td style="background-color: white; color:black; font-size: 16px;">{{ data.s_Sulfur }}</td>
+            <td style="background-color: white; color:black; font-size: 16px;">{{ data.s_Nutrition_Value }}</td>
+            <td style="background-color: white; color:black; font-size: 16px;">{{ data.result }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+</div>
+
+	<script src="{% static 'manager/client_insight/js/jquery.min.js' %}"></script>
+  <script src="{% static 'manager/client_insight/js/popper.js' %}"></script>
+  <script src="{% static 'manager/client_insight/js/bootstrap.min.js' %}"></script>
+  <script src="{% static 'manager/client_insight/js/main.js' %}"></script>
+
+	</body>
+</html>
+

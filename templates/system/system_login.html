@@ -1,0 +1,129 @@
+
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+<title>Animated Login Form Flat Responsive Widget Template :: w3layouts</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Animated Login Form template Responsive, Login form web template,Flat Pricing tables,Flat Drop downs  Sign up Web Templates, Flat Web Templates, Login sign up Responsive web template, SmartPhone Compatible web template, free Web Designs for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- Custom Theme files -->
+<link href="{% static 'client/client_login/css/bootstrap.min.css' %}" media='all' rel='stylesheet'>
+<link href="{% static 'client/client_login/css/style.css' %}" rel="stylesheet" type="text/css" media="all" />
+<link rel="stylesheet" href="{% static 'client/client_login/css/animate.min.css' %}">
+<!-- //Custom Theme files -->
+<!-- web font -->
+<link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'><!--web font-->
+<!-- //web font -->
+
+	<style>
+		.button-18 {
+  align-items: center;
+  background-color: #0A66C2;
+  border: 0;
+  border-radius: 100px;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: -apple-system, system-ui, system-ui, "Segoe UI", Roboto, "Helvetica Neue", "Fira Sans", Ubuntu, Oxygen, "Oxygen Sans", Cantarell, "Droid Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Lucida Grande", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  justify-content: center;
+  line-height: 20px;
+  max-width: 480px;
+  min-height: 40px;
+  min-width: 0px;
+  overflow: hidden;
+  padding: 0px;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+  touch-action: manipulation;
+  transition: background-color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, box-shadow 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
+}
+
+.button-18:hover,
+.button-18:focus {
+  background-color: #16437E;
+  color: #ffffff;
+}
+
+.button-18:active {
+  background: #09223b;
+  color: rgb(255, 255, 255, .7);
+}
+
+.button-18:disabled {
+  cursor: not-allowed;
+  background: rgba(0, 0, 0, .08);
+  color: rgba(0, 0, 0, .3);
+}
+body {
+            background-image: url("{%static 'icons/2.jpg' %}");
+            background-size: cover;
+            background-repeat: no-repeat;
+
+        }
+	</style>
+</head>
+<body>
+<script>
+{% for msg in messages %}
+	alert('{{ msg }}');
+{% endfor %}
+</script>
+	<!-- main-agileits -->
+	<div class="agileits">
+		<h1 style="margin-top:-10px">SystemCare Hub Login Form</h1>
+		<div class="w3-agileits-info">
+			<form class='form animate-form' id='form1' action="#" method="post" style="margin-top:-40px">
+				{% csrf_token %}
+				<p class="w3agileits">SystemCare Hub Login Here</p>
+
+				<div class='form-group has-feedback wthree'>
+					<label class='control-label sr-only' for='email'>Email address</label> 
+					<input class='form-control' id='email' name='empemail' autocomplete="off" placeholder='Email address' type='text' required="/"><span class='glyphicon glyphicon-ok form-control-feedback'></span>
+				</div>
+				<div class='form-group has-feedback agile'>
+					<label class='control-label sr-only' for='password'>Password</label> 
+					<input class='form-control w3l' id='password' name='emppassword' autocomplete="off"  placeholder='Password' type='password' required="/"><span class='glyphicon glyphicon-ok form-control-feedback'></span>
+				</div>
+				<div class='submit w3-agile'>
+					<input class='btn btn-lg' type='submit' value='LOGIN'>
+				</div>
+			</form>
+
+<form class='form animate-form'  action="/systemregister/" >
+
+
+	<center><p class="custom-text"><b>Don't have an account, Click Register Now!</b></p> </center>
+
+	<br>
+			<div class='submit w3-agile'>
+	 <input class='btn btn-lg' type="submit"   value="REGISTER NOW" >
+					</div>
+</form>
+
+			<br>
+			<center><a href="/"><button class="button-18" style="background-color:#00bcd4;height:20px;width:300px;" role="button">Home</button></a></center>
+
+
+</div>	
+	</div>	
+	<!-- //agileits -->
+	<!-- copyright -->
+
+	<!-- //copyright -->  
+	<!-- js -->
+	<script src="{% static 'client/client_login/js/jquery-2.2.3.min.js' %}"></script>
+	<script src="{% static 'client/client_login/js/jquery.validate.min.js' %}"></script>
+	<script src="{% static 'client/client_login/js/formAnimation.js' %}"></script>
+	<script src="{% static 'client/client_login/js/shake.js' %}"></script>
+	<!-- //js -->
+</body>
+</html>

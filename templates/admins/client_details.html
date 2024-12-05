@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="zxx">
+
+<head>
+    <title>Organization Corporate Category Bootstrap Responsive Template | Home :: W3layouts</title>
+    <!-- Meta tag Keywords -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8" />
+    <meta name="keywords" content="Organization Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+    <script>
+        addEventListener("load", function() {
+            setTimeout(hideURLbar, 0);
+        }, false);
+
+        function hideURLbar() {
+            window.scrollTo(0, 1);
+        }
+
+    </script>
+    <!-- //Meta tag Keywords -->
+    <!-- Custom-Files -->
+    <link rel="stylesheet" href="{% static 'admins/admins_home/css/bootstrap.css' %}">
+    <!-- Bootstrap-Core-CSS -->
+    <link rel="stylesheet" href="{% static 'admins/admins_home/css/style.css' %}" type="text/css" media="all" />
+    <!-- Style-CSS -->
+    <!-- font-awesome-icons -->
+    <link href="{% static 'admins/admins_home/css/font-awesome.css' %}" rel="stylesheet">
+    <!-- //font-awesome-icons -->
+      <!-- /Fonts -->
+    <link href="//fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900" rel="stylesheet">
+    <!-- //Fonts -->
+
+</head>
+ <style>
+
+.button-5 {
+  padding: 0.6em 2em;
+  border: none;
+  outline: none;
+  color: rgb(255, 255, 255);
+  background: #111;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-5:before {
+  content: "";
+  background: linear-gradient(
+    45deg,
+    #ff0000,
+    #ff7300,
+    #fffb00,
+    #48ff00,
+    #00ffd5,
+    #002bff,
+    #7a00ff,
+    #ff00c8,
+    #ff0000
+  );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing-button-85 20s linear infinite;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+@keyframes glowing-button-5 {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.button-5:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #222;
+  left: 0;
+  top: 0;
+  border-radius: 100px;
+}
+.button-4 {
+  padding: 0.6em 1.2em;
+  border: none;
+  outline: none;
+  color: #000;
+  background: #fff;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-4:before {
+  content: "";
+  background: linear-gradient(
+    45deg,
+    #ff0000,
+    #ff7300,
+    #fffb00,
+    #48ff00,
+    #00ffd5,
+    #002bff,
+    #7a00ff,
+    #ff00c8,
+    #ff0000
+  );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing-button-85 20s linear infinite;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+@keyframes glowing-button-4 {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 100% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.button-4:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: white;
+  left: 0;
+  top: 0;
+  border-radius: 100px;
+}
+
+</style>
+<body>
+<script>
+{% for msg in messages %}
+	alert('{{ msg }}');
+{% endfor %}
+</script>
+    <!-- mian-content -->
+    <div class="main-content" id="home">
+        <div class="layer">
+            <!-- header -->
+            <header>
+                <div class="container-fluid px-lg-5">
+					
+                    <!-- nav -->
+                    <nav class="pt-4 d-lg-flex">
+                        <div id="logo">
+                            <h1> <a href="/admins_home/">ADMIN</a></h1>
+                        </div>
+                        <label for="drop" class="toggle">Menu</label>
+                        <input type="checkbox" id="drop" />
+                        <ul class="menu mt-2 ml-auto">
+                            <li ><a href="/">Home</a></li>
+
+                            <li>
+                                <!-- First Tier Drop Down -->
+                                <label for="drop-2" class="toggle">Dropdown <span class="fa fa-angle-down" aria-hidden="true"></span> </label>
+                                <a href="#" style="color:#db1478;">Logstatus <span class="fa fa-angle-down" aria-hidden="true"></span></a>
+                                <input type="checkbox" id="drop-2" />
+                                <ul class="inner-ul">
+                                    
+                                    <li class="active"><a href="/client_details/" class="scroll">Client</a></li>
+									<li><a href="/am_details/" class="scroll">AeroMistifier</a></li>
+                                    <li><a href="/soil_details/" class="scroll">SoilProfiler</a></li>
+									<li><a href="/system_details/" class="scroll">SystemCare Hub</a></li>
+
+                                </ul>
+                            </li>
+							   <li>
+                                <!-- First Tier Drop Down -->
+                                <label for="drop-2" class="toggle">Dropdown <span class="fa fa-angle-down" aria-hidden="true"></span> </label>
+                                <a href="#">Reports <span class="fa fa-angle-down" aria-hidden="true"></span></a>
+                                <input type="checkbox" id="drop-2" />
+                                <ul class="inner-ul">
+
+                                    <li><a href="/aero_report/" class="scroll">AeroMistifier</a></li>
+									<li><a href="/soil_report/" class="scroll">SoilProfiler</a></li>
+                                    <li><a href="/system_report/" class="scroll">SystemCare Hub</a></li>
+
+                                </ul>
+                            </li>
+                            <li><a href="/invoicehome/" class="scroll">Generate Bill</a></li>
+                            <li><a href="/payslip/" class="scroll">Payslip Status</a></li>
+							 <li><a href="/admins_logout/" class="scroll">Logout</a></li>
+                        </ul>
+                    </nav>
+                    <!-- //nav -->
+                </div>
+            </header>
+            <!-- //header -->
+<section class="ftco-section">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-md-6 text-center mb-5">
+					<br><br><br><br><br><br><br>
+					<h2 class="heading-section" style="color:white;">Client Profile</h2>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-md-12">
+					<div class="table-wrap">
+						<table class="table">
+
+						  <thead class="thead-dark">
+<tr>
+						  <th style="background-color: orange; font-size: 16px;"><center>Client Id</center></th>
+						  <th style="background-color: orange; font-size: 16px;"><center>Order Id</center></th>
+						  <th style="background-color: orange; font-size: 16px;"><center>Name</center></th>
+						  <th style="background-color: orange; font-size: 16px;"><center>Address</center></th>
+						  <th style="background-color: orange; font-size: 16px;"><center>Email</center></th>
+						  <th  style="background-color: orange; font-size: 16px;"><center>Phone Number</center></th>
+                          <th colspan="2"; style="background-color: orange; font-size: 16px;"><center>Status</center></th>
+
+
+					      </tr>
+					    </thead>
+
+					    <tbody>
+						    <tr class="alert" role="alert">
+{% for data in datas %}
+    <tr>
+        <td style="text-align:center;color:black;background-color:white;">{{ data.client_id }}</td>
+        <td style="text-align:center;color:black;background-color:white;">{{ data.order_id }}</td>
+        <td style="text-align:center;color:black;background-color:white;">{{ data.fullname }}</td>
+        <td style="text-align:center;color:black;background-color:white;">{{ data.address}}</td>
+        <td style="text-align:center;color:black;background-color:white;">{{ data.email }}</td>
+        <td style="text-align:center;color:black;background-color:white;">{{ data.phone }}</td>
+                                {% if data.approve is False %}
+			<td style="text-align:center;color:black;background-color:white;"><a href="/approve/{{data.id}}/"><button class="button-5" role="button" >Approve</button></a></td>
+
+			{% endif %}
+			{% if data.approve is True %}
+			 <td style="text-align:center;color:black;background-color:white;"><button class="button-4" >Approved</button></td>
+			{% endif %}
+
+			{% if data.reject is False %}
+			<td style="text-align:center;color:black;background-color:white;"><a href="/reject/{{data.id}}/"><button class="button-5">Reject</button></a></td>
+
+			{% endif %}
+			{% if data.reject is True %}
+			 <td style="text-align:center;color:black;background-color:white;"><button class="button-4">Rejected</button></td>
+			{% endif %}
+
+    </tr>
+{% endfor %}
+
+					    </tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+		<br><br>
+	</section>
+</body>
+
+</html>

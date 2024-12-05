@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+<title>Order Payment - Clients</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Credit Card Style Payment Widget A Flat Responsive Web Template, Bootstrap Web Templates, Flat Web Templates, Android Compatible Web Template, 
+Smartphone Compatible Web Template, Free Webdesigns for Nokia, Samsung, LG, Sony Ericsson, Motorola Webdesign" />
+<script type="application/x-javascript"> addEventListener("load"), function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- //For - Mobile - Apps -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+<!-- Style --> <link rel="stylesheet" href="{% static 'client/payment/css/style.css' %}" type="text/css" media="all" />
+</head>
+<body style="background-image: url({% static 'icons/b4.jpg' %}); background-size:cover; background-repeat:no-repeat; height: 120vh;">
+<br>
+<h2 style="color: white; text-align: center; font-family: sans-serif;font-size: 30px;">ORDER PAYMENT</h2>
+<div class="container">
+<form action="/process_payment/{{client_id}}/" method="post">
+	{% csrf_token %}
+	<div class="paymentbox">
+		<p>CLIENT ID</p>
+		<input type="text" class="name" name="client_id" value="{{ client_id }} " required="" disabled>
+
+		<p>ORDER ID</p>
+		<input type="text" class="name" name="order_id" value="{{ order_id }} " required="" disabled>
+
+		<p>AMOUNT : Rs.</p>
+		<input type="text" class="name" name="amount" value="{{ amount }} " required="" disabled>
+
+		<p>NAME ON CARD</p>
+		<input type="text" class="name" name="name" placeholder="Firstname Lastname" autocomplete="off" required="">
+
+		<p>CARD NUMBER</p>
+		<input type="text" class="name" name="acc" maxlength="16" autocomplete="off" placeholder="XXXX - XXXX - XXXX - XXXX" required="">
+
+		<div class="exp">
+		<p>EXPIRATION</p>
+		<input type="text" class="expire" name="exp" autocomplete="off" placeholder="MM/YY"  maxlength="5" required="">
+		</div>
+
+		<div class="cvv">
+		<p>CVV</p>
+		<input type="password" class="cvvv" name="cvv" autocomplete="off" placeholder="XXX" maxlength="3" required="">
+		</div>
+{% if data1 %}
+			<a href="/client_home/"><p style="margin-left: 320px;margin-top: 25px;" class="btn btn-success"> Payment Paid </p></a>
+{% else %}
+
+		<input type="submit" style="margin-left: 320px;margin-top: 25px;" class="btn btn-success" value="Proceed To Pay →">
+		<a href="/client_home/"  style="margin-left: -420px;margin-top: 25px;" class="btn btn-success">Go Back</a>
+{% endif %}
+
+
+
+		<div class="clear"></div>
+	</div>
+</form>
+</div>
+<div class="footer">
+</div>
+</body>
+</html>

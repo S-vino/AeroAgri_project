@@ -1,0 +1,380 @@
+<!doctype html>
+ {% load static %}
+<html lang="en">
+  <head>
+	   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  	<title>View Report</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700' rel='stylesheet' type='text/css'>
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<link rel="stylesheet" href="{% static 'manager/client_insight/css/style.css' %}">
+
+
+
+
+
+
+ <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Template CSS -->
+    <link rel="stylesheet" href="{% static 'soil/soil_home/css/style-starter.css' %}">
+    <link href="https://fonts.googleapis.com/css?family=Karla:400,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Karla&display=swap" rel="stylesheet"
+	</head>
+   <style>
+
+.button-85 {
+  padding: 0.6em 2em;
+  border: none;
+  outline: none;
+  color: rgb(255, 255, 255);
+  background: #111;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-85:before {
+  content: "";
+  background: linear-gradient(
+    45deg,
+    #ff0000,
+    #ff7300,
+    #fffb00,
+    #48ff00,
+    #00ffd5,
+    #002bff,
+    #7a00ff,
+    #ff00c8,
+    #ff0000
+  );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing-button-85 20s linear infinite;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+@keyframes glowing-button-85 {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.button-85:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 90%;
+  background: #222;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+.button-4 {
+  padding: 0.6em 1.2em;
+  border: none;
+  outline: none;
+  color: #000;
+  background: #fff;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-4:before {
+  content: "";
+  background: linear-gradient(
+    45deg,
+    #ff0000,
+    #ff7300,
+    #fffb00,
+    #48ff00,
+    #00ffd5,
+    #002bff,
+    #7a00ff,
+    #ff00c8,
+    #ff0000
+  );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing-button-85 20s linear infinite;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+@keyframes glowing-button-4 {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 100% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.button-4:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: white;
+  left: 0;
+  top: 0;
+  border-radius: 100px;
+}
+
+            .table-wrap-scroll {
+        max-height: 450px; /* Set the maximum height for the scroll */
+        overflow-y: auto; /* Add vertical scroll bar */
+        overflow-x: auto; /* Add horizontal scroll bar if needed */
+    }
+
+    .table {
+        width: 100%; /* Make sure the table takes 100% width */
+    }
+
+    .button-4 {
+  padding: 0.6em 1.2em;
+  border: none;
+  outline: none;
+  color: #000;
+  background: #fff;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-4:before {
+  content: "";
+  background: linear-gradient(
+    45deg,
+    #ff0000,
+    #ff7300,
+    #fffb00,
+    #48ff00,
+    #00ffd5,
+    #002bff,
+    #7a00ff,
+    #ff00c8,
+    #ff0000
+  );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing-button-85 20s linear infinite;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+@keyframes glowing-button-4 {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 100% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.button-4:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: white;
+  left: 0;
+  top: 0;
+  border-radius: 100px;
+}
+
+
+</style>
+<body style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url({% static 'icons/1.1.jpg' %});
+    background-repeat: no-repeat;background-size: auto 200%; ">
+<script>
+{% for msg in messages %}
+	alert('{{ msg }}');
+{% endfor %}
+</script>
+
+<section class=" w3l-header-4 header-sticky">
+    <header class="absolute-top">
+        <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <h1><a class="navbar-brand" href="/soil_home/"> <span class="fa fa-pagelines" aria-hidden="true"></span>
+         SoilProfiler
+            </a></h1>
+            <button class="navbar-toggler bg-gradient collapsed" type="button" data-toggle="collapse"
+                data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="fa icon-expand fa-bars"></span>
+				<span class="fa icon-close fa-times"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav  ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/s_aero_report/">AeroMist Report</a>
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/aero_process_data/" style="color:#28a745;">Process Data</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/soil_result/">SoilProfiler Report</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/aero_logout/">Logout</a>
+                    </li>
+                </ul>
+<!--                <a href="#" class="ml-lg-3 mt-lg-0 mt-3 book btn btn-style">Get started</a>-->
+            </div>
+          </nav></div>
+
+
+      </header>
+</section>
+
+<br><br>
+	<section class="ftco-section">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-md-6 text-center mb-5">
+
+
+					<br><br>
+					<a href="/aero_process_view/"><h2 class="heading-section" style="color:white;font-weight: 800;">SOILPROFILER PROGRESS</h2></a>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<div class="table-wrap-scroll">
+						<table class="table">
+
+						  <thead class="thead-dark">
+<tr>
+
+						    <th style="background-color: #5E5A80; font-size: 16px;"><center>Client Id</center></th>
+						    <th style="background-color: #5E5A80; font-size: 16px;"><center>Plant Type</center></th>
+							<th style="background-color: #5E5A80; font-size: 16px;"><center>Nutrient Solution Temperature</center></th>
+							<th style="background-color: #5E5A80; font-size: 16px;"><center>Nutrient Solution pH</center></th>
+							<th style="background-color: #5E5A80; font-size: 16px;"><center>Nutrient Solution Electrical Conductivity</center></th>
+							<th style="background-color: #5E5A80; font-size: 16px;"><center>Dissolved Oxygen</center></th>
+							<th style="background-color: #5E5A80; font-size: 16px;"><center>Air Temperature</center></th>
+							<th style="background-color: #5E5A80; font-size: 16px;"><center>Air Humidity</center></th>
+							<th style="background-color: #5E5A80; font-size: 16px;"><center>Light Intensity</center></th>
+							<th style="background-color: #5E5A80; font-size: 16px;"><center>CO2 Concentration</center></th>
+							<th style="background-color: #5E5A80; font-size: 16px;"><center>Plant Height</center></th>
+							<th style="background-color: #5E5A80; font-size: 16px;"><center>Plant Weight</center></th>
+							<th style="background-color: #5E5A80; font-size: 16px;"><center>Cultivation Time Days</center></th>
+							<th style="background-color: #5E5A80; font-size: 16px;"><center>Distance Between Plants cm</center></th>
+							<th style="background-color: #5E5A80; font-size: 16px;"><center>Distance Between Plants cm</center></th>
+							<th style="background-color: #5E5A80; font-size: 16px;"><center>Number of plants per m2</center></th>
+							<th style="background-color: #5E5A80; font-size: 16px;"><center>Nutrient Solution FlowRate</center></th>
+							<th style="background-color: #5E5A80; font-size: 16px;"><center>Nutrient Solution Reservoir Volume</center></th>
+							<th style="background-color: #5E5A80; font-size: 16px;"><center>Nutrient Solution Replacement Frequency Days</center></th>
+							<th style="background-color: #5E5A80; font-size: 16px;"><center>Mist Material Type</center></th>
+							<th style="background-color: #5E5A80; font-size: 16px;"><center>Action</center></th>
+
+					      </tr>
+					    </thead>
+					    <tbody>
+						    <tr class="alert" role="alert">
+							{% for data in datas %}
+
+								<td style="text-align:center;background-color:white;">{{data.client_id}}</td>
+								<td style="text-align:center;background-color:white;">{{data.Plant_Type}}</td>
+								<td style="text-align:center;background-color:white;">{{data.Nutrient_Solution_Temperature}}</td>
+								<td style="text-align:center;background-color:white;">{{data.Nutrient_Solution_pH}}</td>
+								<td style="text-align:center;background-color:white;">{{data.Nutrient_Solution_Electrical_Conductivity}}</td>
+								<td style="text-align:center;background-color:white;">{{data.Dissolved_Oxygen}}</td>
+								<td style="text-align:center;background-color:white;">{{data.Air_Temperature}}</td>
+								<td style="text-align:center;background-color:white;">{{data.Air_Humidity}}</td>
+								<td style="text-align:center;background-color:white;">{{data.Light_Intensity}}</td>
+								<td style="text-align:center;background-color:white;">{{data.CO2_Concentration}}</td>
+								<td style="text-align:center;background-color:white;">{{data.Plant_Height}}</td>
+								<td style="text-align:center;background-color:white;">{{data.Plant_Weight}}</td>
+								<td style="text-align:center;background-color:white;">{{data.Cultivation_Time_Days}}</td>
+
+								<td style="text-align:center;background-color:white;">{{data.Distance_between_plants_cm}}</td>
+								<td style="text-align:center;background-color:white;">{{data.Distance_between_rows_cm}}</td>
+								<td style="text-align:center;background-color:white;">{{data.Number_of_plants_per_m2}}</td>
+								<td style="text-align:center;background-color:white;">{{data.Nutrient_Solution_FlowRate}}</td>
+								<td style="text-align:center;background-color:white;">{{data.Nutrient_Solution_Reservoir_Volume}}</td>
+								<td style="text-align:center;background-color:white;">{{data.Nutrient_Solution_Replacement_Frequency_Days}}</td>
+								<td style="text-align:center;background-color:white;">{{data.Mist_Material_Type}}</td>
+								<td style="text-align:center;background-color:white;">
+								{% if data.sdone2 is False %}
+									<a href="/compare_plant_types/{{data.client_id}}/"><button class="button-85">PROCESS</button></a>
+								{% else %}
+									<STRONG>PROCESSED</STRONG>
+								{% endif %} </td>
+					      </tr>
+						{% endfor %}
+
+					    </tbody>
+						</table>
+
+					</div>
+				</div>
+			</div>
+		</div>
+		<br>
+	</section>
+	</body>
+</html>
+
